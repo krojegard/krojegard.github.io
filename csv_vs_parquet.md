@@ -16,7 +16,7 @@ with open(local_location, 'w') as csvfile:
 
 ## Upload file
 ```
-split = filename.split('T') # 2020-02-19T08:54:13.443244.parquet
+split = filename.split('T') # 2020-02-19T08:54:13.443244.csv
 key = s3_prefix + split[0] + '/' + split[1] # partitioned on date
 upload_file(local_location, s3_bucket, key)
 ```
