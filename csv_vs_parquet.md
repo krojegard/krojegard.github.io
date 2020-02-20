@@ -98,7 +98,6 @@ Realize your CSV has line breaks and that Spectrum doesn't seem to handle that n
 Replace CSV dumping with Parquet dumping, because Parquet doesn't care about your line breaks.
 
 ```
-import numpy as np
 import pyarrow as pa
 import pandas as pd
 import pyarrow.parquet as pq
